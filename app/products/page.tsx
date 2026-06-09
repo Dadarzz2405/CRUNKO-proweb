@@ -39,7 +39,7 @@ export default function ProductsPage() {
             href="#"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-brand-green transition-colors hover:text-brand-green-dark"
           >
-            Lihat Semua Produk
+            Lihat Semua Produk — Akan Segera Hadir
             <span className="text-base">→</span>
           </a>
         </div>

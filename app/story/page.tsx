@@ -1,59 +1,27 @@
-import { SectionHeading, TimelineItem } from "@/components";
+import Link from "next/link";
 
 export default function StoryPage() {
   return (
-    <section className="min-h-screen bg-white py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        <SectionHeading
-          label="Cerita Kami"
-          title="Dari Meja Dapur ke Dapur Anda"
-          centered
-        />
-
-        <div className="mx-auto max-w-4xl">
-          <div className="relative pl-8 md:pl-0">
-            <TimelineItem
-              year="2021"
-              title="Gagasan Besar"
-              description="Dua sahabat berbagi visi: camilan yang menyehatkan manusia dan bumi. Resep pertama diuji coba di dapur rumah mungil."
-              side="left"
-            />
-            <TimelineItem
-              year="2022"
-              title="Batch Pertama"
-              description="1.000 kantong pertama kami habis terjual dalam dua minggu di pasar petani lokal. Responsnya luar biasa dan mengonfirmasi bahwa kami berada di jalur yang tepat."
-              side="right"
-            />
-            <TimelineItem
-              year="2023"
-              title="Bersertifikasi Organik"
-              description="Kami mencapai sertifikasi organik penuh dan bermitra dengan pertanian regeneratif di seluruh wilayah. Setiap bahan kini memenuhi standar tertinggi."
-              side="left"
-            />
-            <TimelineItem
-              year="2024"
-              title="1 Juta Kantong"
-              description="Momen pencapaian. Satu juta kantong camilan CRUNKO terjual — dan satu juta langkah lebih dekat menuju sistem pangan yang lebih sehat."
-              side="right"
-            />
-            <TimelineItem
-              year="2025"
-              title="Netral Karbon"
-              description="Kami menjadi perusahaan bersertifikat netral karbon. Seluruh rantai pasokan kami — dari pertanian hingga ke pintu — beroperasi dengan emisi nol-bersih."
-              side="left"
-            />
-          </div>
-        </div>
-
-        <div className="mt-16 text-center">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-brand-beige bg-white px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-brand-dark transition-all duration-300 hover:border-brand-green/30 hover:bg-brand-green-light hover:shadow-lg"
-          >
-            Baca Cerita Lengkap
-            <span className="text-base">→</span>
-          </a>
-        </div>
+    <section className="flex min-h-screen items-center justify-center bg-white">
+      <div className="flex flex-col items-center gap-6 text-center px-6">
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand-green">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          <line x1="8" y1="7" x2="16" y2="7" />
+          <line x1="8" y1="11" x2="14" y2="11" />
+        </svg>
+        <h1 className="text-3xl font-bold tracking-tight text-brand-dark">
+          Segera Hadir
+        </h1>
+        <p className="max-w-md text-sm leading-relaxed text-brand-dark/60">
+          Halaman Cerita Crunko sedang dalam pengembangan.
+        </p>
+        <Link
+          href="/products"
+          className="rounded-full bg-brand-green px-6 py-3 text-sm font-bold uppercase tracking-wider text-white shadow-lg shadow-brand-green/20 transition-all duration-300 hover:bg-brand-green-dark hover:shadow-xl"
+        >
+          Lihat Produk
+        </Link>
       </div>
     </section>
   );
