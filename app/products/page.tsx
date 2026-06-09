@@ -12,23 +12,23 @@ export default function ProductsPage() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <ProductCard
-            name="Keripik Kale Renyah"
-            description="Keripik kale terlaris kami — organik, dibumbui ringan, dan renyah sempurna."
+            name="CRUNKO Pandan"
+            description="Yangko Rasa Pandan."
             delay={0}
           />
           <ProductCard
-            name="Popcorn Garam Laut"
-            description="Dikembangkan dengan udara dan sentuhan garam laut. Sederhana, bersih, dan sangat memuaskan."
+            name="CRUNKO Melon"
+            description="Yangko Rasa Melon"
             delay={150}
           />
           <ProductCard
-            name="Cluster Kelapa"
-            description="Kelapa panggang, biji-bijian, dan sedikit maple. Dorongan energi tropis."
+            name="CRUNKO Stroberi"
+            description="Yangko Rasa Stroberi."
             delay={300}
           />
           <ProductCard
-            name="Gigitan Superfood"
-            description="Campuran biji-bijian kuno, goji berry, dan kakao — segera hadir."
+            name="CRUNKO Matcha"
+            description="Yangko Rasa Matcha."
             badge="Segera Hadir"
             delay={450}
           />
